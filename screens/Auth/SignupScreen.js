@@ -1,37 +1,3 @@
-// import { useState } from "react";
-// import { View, Text, Alert, KeyboardAvoidingView, Platform } from "react-native";
-// import Input from "../../components/Input";
-// import Button from "../../components/Button";
-// import { supabase } from "../../lib/supabase";
-
-// export default function SignupScreen({ navigation }) {
-//   const [email, setEmail] = useState("");
-//   const [password, setPassword] = useState("");
-//   const [loading, setLoading] = useState(false);
-
-//   const signUp = async () => {
-//     if (!email || !password) return Alert.alert("Missing info", "Enter email and password");
-//     setLoading(true);
-//     const { error } = await supabase.auth.signUp({ email, password });
-//     setLoading(false);
-//     if (error) Alert.alert("Sign up failed", error.message);
-//     else Alert.alert("Check your email", "Verify your account, then log in.");
-//   };
-
-//   return (
-//     <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : undefined} className="flex-1 px-6 justify-center">
-//       <Text className="text-3xl font-extrabold mb-10">Create your account</Text>
-//       <Input label="Email" placeholder="you@example.com" value={email} onChangeText={setEmail} keyboardType="email-address" />
-//       <Input label="Password" placeholder="Min 6 characters" value={password} onChangeText={setPassword} secureTextEntry />
-//       <Button title="Sign Up" onPress={signUp} loading={loading} />
-//       <View className="mt-4">
-//         <Button title="Back to Login" onPress={() => navigation.navigate("Login")} className="bg-slate-200" />
-//       </View>
-//     </KeyboardAvoidingView>
-//   );
-// }
-
-
 import { useState } from "react";
 import { View, Text, Alert,TouchableOpacity, KeyboardAvoidingView, Platform, StyleSheet } from "react-native";
 import { LinearGradient } from 'expo-linear-gradient';

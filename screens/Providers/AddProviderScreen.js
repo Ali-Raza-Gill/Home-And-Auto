@@ -1,33 +1,3 @@
-// import { useState } from "react";
-// import { View, Text, ScrollView, Alert } from "react-native";
-// import Input from "../../components/Input";
-// import Button from "../../components/Button";
-// import { supabase } from "../../lib/supabase";
-
-// export default function AddProviderScreen({ navigation }) {
-//   const [form, setForm] = useState({ company_name: "", service_type: "", service_area: "", website: "", reviews: "", rating: 5 });
-
-//   const save = async () => {
-//     const payload = { ...form, rating: Number(form.rating) || null };
-//     const { error } = await supabase.from("service_providers").insert(payload);
-//     if (error) Alert.alert("Error", error.message);
-//     else { Alert.alert("Added", "Provider added"); navigation.goBack(); }
-//   };
-
-//   return (
-//     <ScrollView className="flex-1 p-4">
-//       <Text className="text-2xl font-bold mb-4">Add Provider</Text>
-//       <Input label="Company Name" value={form.company_name} onChangeText={(t)=>setForm({...form, company_name: t})} />
-//       <Input label="Service Type" value={form.service_type} onChangeText={(t)=>setForm({...form, service_type: t})} />
-//       <Input label="Service Area (Zip/City)" value={form.service_area} onChangeText={(t)=>setForm({...form, service_area: t})} />
-//       <Input label="Website" value={form.website} onChangeText={(t)=>setForm({...form, website: t})} />
-//       <Input label="Customer Reviews" value={form.reviews} onChangeText={(t)=>setForm({...form, reviews: t})} />
-//       <Input label="Rating (1-5)" value={String(form.rating)} onChangeText={(t)=>setForm({...form, rating: t})} keyboardType="numeric" />
-//       <Button title="Add Provider" onPress={save} />
-//     </ScrollView>
-//   );
-// }
-
 
 import { useState } from "react";
 import { View, Text, ScrollView, Alert, StyleSheet, TouchableOpacity } from "react-native";
