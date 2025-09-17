@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "HAA",
+    "slug": "haa-app-expo",
+    "scheme": "haa",
+    "version": "1.0.0",
+    "newArchEnabled": true,
+    "orientation": "portrait",
+     "userInterfaceStyle": "automatic", 
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "enabled": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ali_raza_gill.haaappexpo"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.ali_raza_gill.haaappexpo"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "00000000-0000-0000-0000-000000000000"
+      }
+    }
+  }
+}

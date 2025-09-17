@@ -1,0 +1,20 @@
+node_modules/ npm-debug.log yarn-error.log package-lock.json yarn.lock
+
+.expo/ .expo-shared/ dist/ web-build/ *.jks *.p8 *.p12 *.key *.mobileprovision .orig.*.expo
+*.keystore *.DS_Store *.log .log.*.bak *.swp
+
+/android/app/build/ /ios/build/ /ios/Pods/ /ios/.xcodeproj/project.xcworkspace/ /ios/.xcodeproj/xcuserdata/
+
+.env .env.local .env.development.local .env.test.local .env.production.local
+
+.DS_Store
+
+.vscode/ .idea/ *.sublime-project *.sublime-workspace
+
+*.tmp *.temp *.bak *.swp *~
+
+.metro/
+
+.expo-updates/
+
+coverage/ *.pem *.cer *.cert *.p12 *.jks *.der *.csr *.crt
